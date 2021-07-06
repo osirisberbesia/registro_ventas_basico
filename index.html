@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas La Marquesa CR</title>
+
+    <link rel="stylesheet" href="CSS/Morph.min.css"
+</head>
+
+<body>
+
+
+<!-- Navegacion-->
+
+<nav class="navbar navbar-light bg-light">
+    <a href="/" class="navbar-brand">
+    Ventas diarias.
+    </a>
+</nav>
+    
+    <div class="container">
+        
+    <!--Aplicacion-->
+    
+    <div id="App" class="row pt-5">
+    <!--Aqui se pone el formulario-->
+    <div class="col-md-4">
+        <div class="Card">
+            <div class="card-header">
+                <h4>Registro Ventas</h4> 
+                
+            </div>
+            
+            <form id="product-form" class="card-body">
+                            
+
+                <div class="form-group"> Rollos de Canela
+                    <input type="number" id="rollos" min"0" value="0" placeholder="Rollos de Canela" class="form-control">            
+                </div>
+                <div class="form-group">Empanadas
+                    <input type="number" id="empanadas" min"0" value="0" placeholder="Empanadas" class="form-control">            
+                </div>
+                <div class="form-group">Suspiros de cocos
+                    <input type="number" id="cocos" min"0" value="0" placeholder="Suspiros de cocos" class="form-control">            
+                </div>
+                <div class="form-group">Total bebida colones
+                    <input type="number" id="bebida" min"0" value="0" placeholder="Total bebida colones" class="form-control">            
+                </div>
+                <div class="form-group">Hamburguesas
+                    <input type="number" id="hamburguesas" min"0" value="0" placeholder="Hamburguesas" class="form-control">            
+                </div>
+                <div class="form-group">Almuerzo
+                    <input type="number" id="almuerzo" min"0" value="0" placeholder="Almuerzo" class="form-control">            
+                </div>
+                <div class="form-group">Promo 2000
+                    <input type="number" id="promo2000" min"0" value="0" placeholder="Promo 2000" class="form-control">            
+                </div>
+                <div class="form-group">Alfajores
+                    <input type="number" id="alfajores" min"0" value="0" placeholder="Alfajores" class="form-control">            
+                </div>
+                <div class="form-group">Donas
+                    <input type="number" id="donas" min"0" value="0" placeholder="Donas" class="form-control">            
+                </div>
+                <div class="form-group">Gastos
+                    <input type="number" id="gastos" min"0" value="0" placeholder="Gastos" class="form-control">            
+                </div>
+                
+                <input type="submit" value="Guardar" class="btn btn-primary btn-block">
+    
+             </form>
+    
+        </div>
+    </div>
+    <!--Aqui se muestran los productos-->
+    <div class="col-md-8">
+        <div id="situacion" class="navbar navbar-light bg-light">
+            <p><strong>Ventas del día</strong>: <span id="ventasinfo">0</span></p>
+            <p><strong>Gastos del día</strong>: <span id="gastosinfo">0</span></p>
+            <p><strong>Saldo del dia</strong>: <span id="totalinfo">0</span></p>
+        </div>
+
+        <div id="product-list" class="col-md-8">
+
+
+
+        </div>
+        
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    <script src="app.js"></script>
+    
+    
+</body>
+</html>
